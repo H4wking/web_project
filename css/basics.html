@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main page</title>
+	<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+	<div class="topnav">
+		<a href="../index.html">Home</a>
+		<div class="dropdown">
+		    <a class="dropbtn" href="../html/html.html">HTML
+		    	<i class="fa fa-caret-down"></i>
+		    </a>
+		    <div class="dropdown-content">
+		    	<a href="../html/about-html.html">About HTML</a>
+		    	<a href="../html/basics.html">Basics</a>
+		    	<a href="../html/forms.html">Forms</a>
+		    </div>
+		</div> 
+		<div class="dropdown">
+		    <a class="dropbtn-active" href="css.html">CSS
+		    	<i class="fa fa-caret-down"></i>
+		    </a>
+		    <div class="dropdown-content">
+		    	<a href="about-css.html">About CSS</a>
+		    	<a href="basics.html">Basics</a>
+		    	<a href="box-model.html">Box Model</a>
+		    </div>
+		</div> 
+		<a href="../about/about.html">About</a>
+	</div>
+	<div id="background-secondary">
+		<img src="../img/1.jpg" width=110% height=100%>
+	</div>
+	<div class="secondary">
+		<h1>Basics</h1>
+
+		<h2>CSS Example</h2>
+
+		<div class="code"><pre><code>body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}</code></pre></div>
+
+		<h2>Apply CSS to HTML</h2>
+
+		<p>In order to apply CSS to HTML document you have to use <code>&lt;link></code> tag.</p>
+
+		<div class="code"><code>&lt;link href="styles/style.css" rel="stylesheet"></code></div>
+
+		<h2>Rule Set</h2>
+
+		<img src="../img/rule-set.png" width="425px" height="240px">
+
+		<p>The whole structure is called a rule set (but often "rule" for short). Note the names of the individual parts:</p>
+
+		<ul>
+			<li>Selector is the HTML element name at the start of the rule set. It selects the element(s) to be styled (in this case, <code>&lt;p></code> elements). To style a different element, just change the selector.</li>
+			<li>Declaration is a single rule like <code>color: red;</code> specifying which of the element's properties you want to style.</li>
+			<li>Properties are ways in which you can style a given HTML element. (In this case, color is a property of the <code>&lt;p></code> elements.) In CSS, you choose which properties you want to affect in your rule.</li>
+			<li>To the right of the property, after the colon, we have the property value, which chooses one out of many possible appearances for a given property (there are many <code>color</code> values besides <code>red</code>).</li>
+		</ul>
+
+		<h2>Types of Selectors</h2>
+
+		<p>There are many different types of selectors. Above, we only looked at element selectors, which select all elements of a given type in the given HTML documents. But we can make more specific selections than that. Here are some of the more common types of selectors:</p>
+
+		<ul>
+			<li>Element selector: <code>p</code></li>
+			<li>ID selector: <code>#my-id</code></li>
+			<li>Class Selector: <code>.my-class</code></li>
+			<li>Attribute selector: <code>img[src]</code></li>
+			<li>Pseudo-class selector: <code>a:hover</code></li>
+		</ul>
+
+		<h2>Sources</h2>
+		<ul>
+			<li><a href="https://www.w3schools.com/css/css_intro.asp">w3schools.com</a></li>
+			<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">developer.mozilla.org</a></li>
+		</ul>
+	</div>
+
+</body>
+</html>

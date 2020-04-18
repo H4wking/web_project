@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main page</title>
+	<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+	<div class="topnav">
+		<a href="../index.html">Home</a>
+		<div class="dropdown">
+		    <a class="dropbtn-active" href="html.html">HTML
+		    	<i class="fa fa-caret-down"></i>
+		    </a>
+		    <div class="dropdown-content">
+		    	<a href="about-html.html">About HTML</a>
+		    	<a href="basics.html">Basics</a>
+		    	<a href="forms.html">Forms</a>
+		    </div>
+		</div> 
+		<div class="dropdown">
+		    <a class="dropbtn" href="../css/css.html">CSS
+		    	<i class="fa fa-caret-down"></i>
+		    </a>
+		    <div class="dropdown-content">
+		    	<a href="../css/about-css.html">About CSS</a>
+		    	<a href="../css/basics.html">Basics</a>
+		    	<a href="../css/box-model.html">Box Model</a>
+		    </div>
+		</div> 
+		<a href="../about/about.html">About</a>
+	</div>
+	<div id="background-secondary">
+		<img src="../img/1.jpg" width=110% height=100%>
+	</div>
+	<div class="secondary">
+		<h1>Basics</h1>
+		<h2>What are Tags and Attributes?</h2>
+
+		<p>Tags and attributes are the basis of HTML. They work together but perform different functions.</p>
+
+		<p>Tags are used to mark up the start of an HTML element and they are usually enclosed in angle brackets. An example of a tag is: <code>&lt;h1></code>. Most tags must be opened <code>&lt;h1></code> and closed <code>&lt;/h1></code> in order to function.</p>
+
+		<p>Attributes contain additional pieces of information. Attributes take the form of an opening tag and additional info is placed inside. An example of an attribute is:</p>
+
+		<div class="code"><code>&lt;img src="mydog.jpg" alt="A photo of my dog."></code></div>
+
+		<p>In this instance, the image source (src) and the alt text (alt) are attributes of the <code>&lt;img></code> tag.</p>
+
+		<h2>A Simple HTML Document</h2>
+
+		<div class="code"><pre><code>&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;title>Page Title&lt;/title>
+&lt;/head>
+&lt;body>
+
+&lt;h1>My First Heading&lt;/h1>
+&lt;p>My first paragraph.&lt;/p>
+
+&lt;/body>
+&lt;/html></code></pre></div>
+
+		<h2>Example Explained</h2>
+
+		<ul>
+			<li>The <code>&lt;!DOCTYPE html></code> declaration defines this document to be HTML5</li>
+			<li>The <code>&lt;html></code> element is the root element of an HTML page</li>
+			<li>The <code>&lt;thead></code> element contains meta information about the document</li>
+			<li>The <code>&lt;title></code> element specifies a title for the document</li>
+			<li>The <code>&lt;body></code> element contains the visible page content</li>
+			<li>The <code>&lt;h1></code> element defines a large heading</li>
+			<li>The <code>&lt;p></code> element defines a paragraph</li>
+		</ul>
+		
+		<h2>Web Browsers</h2>
+
+		<p>The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them.</p>
+
+		<p>The browser does not display the HTML tags, but uses them to determine how to display the document:</p>
+
+		<img src="../img/chrome.png">
+
+		<h2>Sources</h2>
+		<ul>
+			<li><a href="https://www.w3schools.com/html/html_intro.asp">w3schools.com</a></li>
+			<li><a href="https://html.com/#What_is_HTML">html.com</a></li>
+		</ul>
+	</div>
+
+</body>
+</html>
